@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: "Quantico", sans-serif;
+    /* border: 2px red solid; */
+}
+
+html {
+    background-color: black;
+    background-image: url(space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+#logo {
+    width: 400px;
+    margin-bottom: -120px;
+}
+
+#service-cards {
+    display: grid; /* Turns it into a grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Space between the grid items */
+    margin: 20px;
+    width: 80vw;
+}
+.service-card {
+    background-color: rgb(49, 49, 49);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.service-card i {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    font-weight: 2000;
+}
+
+.pill {
+    color: black;
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+    border: none;
+    transition: background-color 300ms ease-in;
+    transition: color 300ms ease-out;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.pill:hover {
+    color: white;
+    border-radius: 20px;
+    background-color: gray;
+    padding: 10px;
+}
