@@ -83,5 +83,7 @@ body {
     display: flex;
     flex-direction: column;
     width: calc(100vw - 240px);
+    align-items: center;
+    justify-content: center;
     
 }
