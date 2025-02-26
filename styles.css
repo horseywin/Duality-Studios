@@ -17,7 +17,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 30px;
+    text-align: center;
 
 }
 
@@ -59,6 +61,7 @@ body {
     border: none;
     transition: background-color 300ms ease-in;
     transition: color 300ms ease-out;
+    transition: padding 300ms ease;
     cursor: pointer;
     margin: 10px;
 }
@@ -67,5 +70,18 @@ body {
     color: white;
     border-radius: 20px;
     background-color: gray;
-    padding: 10px;
+    padding: 15px;
+}
+
+.button-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#creator {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 240px);
+    
 }
